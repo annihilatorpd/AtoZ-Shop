@@ -1,0 +1,54 @@
+.first-banner-heading {
+    color: white;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 40px;
+}
+.first-banner-heading h1 {
+    font-size: 60px;
+}
+.blog-card {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
+}
+.blog-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.blog-card img {
+    height: 600px;
+}
+/* Truncated text styling */
+.content-wrapper {
+    overflow: hidden; /* Hide overflowing content */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; /* Add ellipsis (...) */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.content-wrapper.expanded {
+    -webkit-line-clamp: unset; /* Remove line limitation */
+}
+
+/* Read More/Read Less link */
+.read-more {
+    color: var(--primary-color);
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.read-more:hover {
+    color: red;
+}
+.blog-card h4 {
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 20px;
+}

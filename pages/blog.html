@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/variable.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/blog.js"></script>
+</head>
+<body>
+    <!-- HEADER STARTING -->
+    <div class="top-sub-header" id="tsh">
+        <div class="container d-flex">
+            <div class="col-6 left-side-ts-head">
+                <img class="shop-bag" src="../assets/icon/shop_bag.png" alt="">
+                <span>Welcome To AtoZ Shopping Store</span>
+            </div>
+            <div class="col-6 right-side-ts-head">
+                <span><i class="bi bi-telephone-fill"></i>&nbsp;+91 81717 94097&nbsp;&nbsp;|&nbsp;&nbsp;<i class="bi bi-envelope"></i>&nbsp;atozshop@gmail.com</span>
+            </div>
+        </div>
+    </div>
+    <div class="main-header">
+        <div class="container d-flex align-items-center">
+            <div class="col-3 left-side-mhead">
+                <img class="store-logo" src="../assets/icon/store_logo.png" alt="">
+            </div>
+            <div class="col-6 middle-mhead">
+                <div class="input-group">
+                    <input type="search" class="form-control input-form rounded-0" placeholder="Search Product ..." aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="btn btn-outline-danger  rounded-0" data-mdb-ripple-init>Search</button>
+                </div>
+            </div>
+            <div class="col-3 right-side-mhead">
+                <span><i class="bi bi-arrow-right-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Login/Signup" id="modalButton"></i>&nbsp;|&nbsp;<i class="bi bi-person-fill" data-toggle="tooltip" data-placement="top" title="My Account"></i>&nbsp;|&nbsp;<i class="bi bi-heart-fill" data-toggle="tooltip" data-placement="top" title="Wishlist"></i>&nbsp;|&nbsp;<span class="dropdown">
+                        <button class="btn cart-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-toggle="tooltip" data-placement="top" title="My Cart">
+                            <i class="bi bi-cart3" ></i>
+                        </button>
+                        <ul class="dropdown-menu cart-menu">
+                        <li><a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="col-4 cart-menu-img">
+                              <img src="../assets/image/linen-blazer.jpg" alt="">
+                            </div>
+                            <div class="col-8 cart-menu-content">
+                              <p>Linen White Blazer</p>
+                              <span>&#8377;30</span>
+                            </div>
+                          </div>
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="col-4 cart-menu-img">
+                              <img src="../assets/image/pink-crop-top.jpg" alt="">
+                            </div>
+                            <div class="col-8 cart-menu-content">
+                              <p>Pink Crop Top</p>
+                              <span>&#8377;30</span>
+                            </div>
+                          </div>
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="col-4 cart-menu-img">
+                              <img src="../assets/image/white-suit.webp" alt="">
+                            </div>
+                            <div class="col-8 cart-menu-content">
+                              <p>Solid Biege Blazer</p>
+                              <span>&#8377;30</span>
+                            </div>
+                          </div>
+                        </a></li>
+                        <hr>
+                        <li><a class="total-cart" href="#" style="text-decoration: none; color: black;">
+                          <div class="d-flex flex-row justify-content-between cart-menu-content1">
+                              <p>Total</p>
+                              <span>&#8377;30</span>
+                          </div>
+                        </a></li>
+                        <li><a class=" d-flex justify-content-center" href="#" style="text-decoration: none;">
+                          <button type="button" class="btn btn-danger rounded-5 cart-menu-btn">Go To Cart</button>
+                        </a></li>
+                        </ul>
+                    </span>
+                </span>
+            </div>   
+        </div>
+    </div>
+    <div class="bottom-sub-header">
+        <div class="container d-flex">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav atoz-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Shop
+                        </a>
+                        <div class="dropdown-menu shop-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="../pages/men-fashion.html">Men's Fashion</a>
+                          <a class="dropdown-item" href="../pages/women-fashion.html">Women's Fashion</a>
+                          <a class="dropdown-item" href="../pages/kid-fashion.html">Kid's Fashion</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/blog.html">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+    <!-- HEADER ENDING -->
+    <!-- BLOG FIRST BANNER -->
+    <div class="first-banner-heading">
+        <h1>BLOG</h1>
+    </div>
+    <!-- BLOG FIRST BANNER -->
+    <!-- BLOGS POST -->
+    <div class="blogss">
+        <div class="container">
+            <div class="card blog-card">
+                <img src="../assets/image/south-girls.webp" alt="">
+                <h4>STYLING AND BEAUTY TIPS FOR SOUTH INDIAN WOMEN</h4>
+                <div class="content-wrapper">
+                    <p>
+                        South India, a land of vibrant traditions and rich cultural heritage, is also a melting pot of diverse styles and fashion sensibilities. From the graceful flow of Kanjeevaram sarees to the playful charm of printed kurtas, South Indian women know how to celebrate their unique essence through their attire. But navigating the ever-evolving fashion landscape can be tricky, especially when aiming for a more streamlined silhouette.
+                        <br><br>Fashion Tips for Looking Slimmer with South Indian Flair:
+                    </p>
+                    <ul>
+                        <li>Fabric Magic: Choose lighter, flowy fabrics like georgette, chiffon, and crepe for sarees and kurtas. Avoid stiff fabrics like organza or heavy silk that can add bulk.</li>
+                        <li>Darker Delights: Opt for darker colors like navy blue, emerald green, and wine red, as they tend to create a slimming effect. You can still incorporate brighter colors as accents or accessories.</li>
+                        <li>Vertical Advantage: Utilize vertical patterns like stripes or pleats to elongate your silhouette. Avoid horizontal patterns that can widen your appearance.</li>
+                        <li>Tailored Treasures: Invest in well-tailored clothing that skims your curves instead of clinging to them. A good fit is essential for looking and feeling confident.</li>
+                        <li>Layer Wisely: Layer strategically! Use a shorter kurta over a longer one, or pair a fitted jacket with a flowing skirt to create a balanced look.</li>
+                        <li>Accessorize Artfully: Use belts strategically to define your waist and create an hourglass figure. Statement necklaces can draw attention upwards, elongating your frame.</li>
+                    </ul>
+                </div>
+                <span class="read-more">Read More</span>
+            </div>
+            <div class="card blog-card">
+                <img src="../assets/image/best-selling.jpg" alt="">
+                <h4>FASHION TRENDS FOR WOMEN 2025</h4>
+                <div class="content-wrapper">
+                    <p>
+                        We all know the story: Jane Birkin sat next to Jean-Louis Dumas, then executive chairman of Hermès, on a flight from Paris to London. Her belongings fell out of her bag; Dumas said she needed a bag with pockets. Birkin replied: “The day Hermès makes one with pockets, I will have that.” <br><br>
+                        Four decades on, women still need more pockets, in bags and in clothing. And more room — both in the clothes they wear and at the top of the companies that make them. When a brand’s poor product fit or draping goes viral, people are quick to comment: “a man definitely designed that”. By and large, they end up being right. <br><br>
+                        Men have taken many of the top designer vacancies in the past several years, though notable exceptions give us hope. On 30 May, Calvin Klein Collection appointed Veronica Leoni into the top job, making her the brand’s first female creative director. Raf Simons previously headed up the brand’s ready-to-wear, before departing in 2018. <br><br>
+                        With so much focus on why it has taken so long to get more women into these positions — and why there are still so few — a different question has gone under-explored: if more women were to design more collections, what would that actually look like? <br><br>
+                        “There is a dearth of clothes that real women can wear,” says Lisa Armstrong, head of fashion at The Telegraph. <br><br>
+                        When Hedi Slimane replaced Phoebe Philo at the helm of Celine in 2018, many were up in arms about the brand’s stark transition from chic, arty, wearable minimalism to ostentatious, skimpy — some said rakish — pieces that excluded many women from participating.
+                    </p>
+                </div>
+                <span class="read-more">Read More</span>
+            </div>
+            <div class="card blog-card">
+                <img src="../assets/image/1960s-mens-fashion.webp" alt="">
+                <h4>MEN'S 60s FASHION YOU SHOULD WEAR IT TODAY AND HOW</h4>
+                <div class="content-wrapper">
+                    <p>
+                        The 70s gets all the credit for sticking it to the man, but really the 60s is where it all began. It was a decade of two halves, certainly in terms of style. At the start, many played it safe with slick, Mad Men-style tailoring and preppy Ivy League classics. But as the culture changed and the 60s really got swinging, the clothes got brighter, bolder and edgier. <br><br>
+                        Ultimately, the 60s became a decade of experimentation, Mod culture, psychedelics and freewheeling bohemians – less JFK, more Jimi Hendrix. It certainly left a mark, sparking trends that are just as cool today, daddy-o, as they were back then. <br><br>
+                        Mod style is one of the 60s’ biggest legacies – in fact, it’s never quite gone away – and the Harrington jacket is about as Mod as they come. It’s one of those classics that’s managed to remain virtually unchanged for decades – you’ll still find the same cropped fit and upturned collar today that you might have 60 years ago. <br><br>
+                        Though some contemporary iterations have ditched the tartan lining, we’re pretty partial to it – and there’s no denying the attitude it adds. Baracuta’s G9 Harrington is the original, and some would say best, though luxe wool and suede versions aren’t to be sniffed at.
+                    </p>
+                </div>
+                <span class="read-more">Read More</span>
+            </div>
+            <div class="card blog-card">
+                <img src="../assets/image/black-black-female.webp   " alt="">
+                <h4>WHAT IT MEANT TO BE A BLACK FASHION DESGINER</h4>
+                <div class="content-wrapper">
+                    <p>
+                        It seems like every week a fashion brand is rallying behind a political candidate, collaborating with a nonprofit, or announcing a new sustainability initiative—in other words, companies are trying to prove they are more “conscious.” Being “conscious” has become a talking point. Credit the current political climate or the idea that customers want to shop their values, but more and more designers are being vocal about where they stand on certain issues, and companies are increasingly transparent about their business or manufacturing practices. <br><br>
+                        It's a positive development in an industry that is known for secrets and elitism. But long before these conversations were considered “on trend,” black women working in fashion in different capacities—designers, models, stylists—have advocated and worked toward making fashion a more inclusive, representative space. <br><br>
+                        Ann Lowe, the woman who made Jacqueline Kennedy’s wedding dress, carved a path for herself, becoming the first black designer to open a boutique on Madison Avenue, and paved the way for many others. (Finally, people are recognizing it.) From 1958 to 2009, the Ebony Fashion Fair, founded by businesswoman Eunice W. Johnson, created a space not just for black designers and models to show their work, but also for black shoppers to spend. By the early 2000s brands like Baby Phat were introducing products to the market that addressed the needs of this previously underserved customer, like jeans that fit curves.
+                    </p>
+                </div>
+                <span class="read-more">Read More</span>
+            </div>
+        </div>
+    </div>
+    <!-- BLOGS POST -->
+
+    <!-- CONTACT INFO STARTING -->
+    <div class="contact-info" style="margin-top: 50px;">
+      <div class="container d-flex">
+        <div class="col-4 p-3">
+          <p class="th-head">NEWSLETTER</p>
+          <div class="input-group">
+            <input type="search" class="form-control input-form rounded-0" placeholder="ENTER EMAIL ADDRESS" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-danger  rounded-0" data-mdb-ripple-init>SUBMIT</button>
+          </div>
+          <p class="th-head pay-head">PAYMENT RECIEVED IN</p>
+          <img src="../assets/icon/payment.png" alt="" class="payment-icons">
+          <div>
+
+          </div>
+        </div>
+        <div class="col-2 p-3">
+          <p class="th-head">CATEGORIES</p>
+          <ul type="none" class="th-list">
+            <li>Fashion Sneakers</li>
+            <li>Jackets</li>
+            <li>Outdoors Shop</li>
+            <li>Pants</li>
+            <li>Shirts & Tops</li>
+            <li>Swim Shop</li>
+            <li>Swimwear</li>
+          </ul>
+        </div>
+        <div class="col-2 p-3">
+          <p class="th-head">MY ACCOUNT</p>
+          <ul type="none" class="th-list">
+            <li>Orders</li>
+            <li>Compare</li>
+            <li>Wishlist</li>
+            <li>Log In</li>
+            <li>Register</li>
+          </ul>
+        </div>
+        <div class="col-4 p-3">
+          <p class="th-head">CONTACT INFO</p>
+          <ul type="none" class="th-list1">
+            <li><i class="bi bi-geo-alt"></i>&nbsp;14 Bigha,Muni Ki Reti, Dehradun, Rishikesh Uttarakhand-249201</li>
+            <li><i class="bi bi-telephone"></i>&nbsp;+91 81717 94097</li>
+            <li><i class="bi bi-envelope"></i>&nbsp;atozshop@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT INFO ENDING -->
+    <hr>    
+    <!-- POPULAR SEARCH STARTING  -->
+    <div class="popular-search-products">
+      <div class="container ">
+        <h6 class="ps-head">POPULAR SEARCHES FOR PRODUCT</h6>
+        <div class="link-ref-search">
+          <a href="#" class="scroll-up">Jackets</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up">&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up"></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up"></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up"></a>  
+        </div>
+      </div>
+    </div>
+    <!-- POPULAR SEARCH ENDING -->
+    <!-- FOOTER SECTION STARTING -->
+    <div class="footer-section">
+      <div class="container d-flex">
+        <div class="col-4 icons-footer">
+          <i class="bi bi-facebook"></i>&nbsp;&nbsp;<i class="bi bi-whatsapp"></i>&nbsp;&nbsp;<i class="bi bi-messenger"></i>&nbsp;&nbsp;<i class="bi bi-twitter-x"></i>&nbsp;&nbsp;<i class="bi bi-pinterest"></i>
+        </div>
+        <div class="col-4 middle-footer-line">
+          <p>Copyright &#169; 2018. All Right Reserved.</p>
+        </div>
+        <div class="col-4 end-footer-line">
+          <p>Privacy Policy</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>Terms & Conditions</span>
+        </div>
+      </div>
+    </div> 
+</body> 
+<!-- REGISTER MODAL STARTING -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog login-dialog">
+      <div class="modal-content login-modal-content">
+          <div class="modal-body">
+            <div class="login-header d-flex justify-content-between">
+              <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+              <i class="bi bi-x-square-fill" data-bs-dismiss="modal" aria-label="Close"></i> 
+            </div>
+            <input type="email" class="form-control input-boxx" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
+            <input type="password" class="form-control input-boxx" id="exampleInputPassword1" placeholder="Enter Your Password">
+            <div class="d-flex justify-content-between mb-3">
+              <div class="remember-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">&nbsp;  
+                <label class="form-check-label" for="defaultCheck1">
+                    Remember Me
+                </label>
+              </div>
+              <div class="password-href">
+                <a href="">Forgot Password ?</a>
+              </div>
+            </div>
+            <a href=""><button type="button" class="btn btn-danger form-control login-btn">Login</button></a>
+            <div class="d-flex flex-column align-items-center two-href">
+              <a href="">Don't Have Account?</a>
+              <a href="">Click Here To Sign up</a>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- REGISTER MODAL ENDING -->
+</html>

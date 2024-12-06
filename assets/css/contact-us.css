@@ -1,0 +1,67 @@
+.contact-para {
+    padding:30px 10px ;
+    
+}
+.contact-para p {
+    font-size: 20px;
+    color: gray;
+    font-weight: bold;
+}
+.first-banner-heading {
+    color: white;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 40px;
+}
+.first-banner-heading h1 {
+    font-size: 60px;
+}
+.order-card-link {
+    border: none;  
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 0px;
+    height: 320px;
+}
+.order-card-link-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 40px;
+}
+.order-card-link-body i {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: var(--primary-color);
+}
+.order-card-link-body p:nth-of-type(1) {
+    font-size: 16px;
+    font-weight: bold;
+}
+.order-card-link-body p:nth-of-type(2) {
+    font-size: 14px;
+}
+.order-card-link-body input[type="text"] {
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+.order-card-link-footer {
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: white !important;
+    padding-bottom: 30px;
+}
+.label-order {
+    padding-bottom: 10px;
+}
+/* Optional: Set size of the iframe container */
+.map-container {
+    width: 100%;
+    height: 500px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Removes border around the iframe */
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/variable.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/contact-us.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</head>
+<body>
+    <!-- HEADER STARTING -->
+    <div class="top-sub-header" id="tsh">
+        <div class="container d-flex">
+            <div class="col-6 left-side-ts-head">
+                <img class="shop-bag" src="../assets/icon/shop_bag.png" alt="">
+                <span>Welcome To AtoZ Shopping Store</span>
+            </div>
+            <div class="col-6 right-side-ts-head">
+                <span><i class="bi bi-telephone-fill"></i>&nbsp;+91 81717 94097&nbsp;&nbsp;|&nbsp;&nbsp;<i class="bi bi-envelope"></i>&nbsp;atozshop@gmail.com</span>
+            </div>
+        </div>
+    </div>
+    <div class="main-header">
+        <div class="container d-flex align-items-center">
+            <div class="col-3 left-side-mhead">
+                <img class="store-logo" src="../assets/icon/store_logo.png" alt="">
+            </div>
+            <div class="col-6 middle-mhead">
+                <div class="input-group">
+                    <input type="search" class="form-control input-form rounded-0" placeholder="Search Product ..." aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="btn btn-outline-danger  rounded-0" data-mdb-ripple-init>Search</button>
+                </div>
+            </div>
+            <div class="col-3 right-side-mhead">
+                <span><i class="bi bi-arrow-right-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Login/Signup" id="modalButton"></i>&nbsp;|&nbsp;<i class="bi bi-person-fill" data-toggle="tooltip" data-placement="top" title="My Account"></i>&nbsp;|&nbsp;<i class="bi bi-heart-fill" data-toggle="tooltip" data-placement="top" title="Wishlist"></i>&nbsp;|&nbsp;<span class="dropdown">
+                        <button class="btn cart-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-toggle="tooltip" data-placement="top" title="My Cart">
+                            <i class="bi bi-cart3" ></i>
+                        </button>
+                        <ul class="dropdown-menu cart-menu">
+                        <li><a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="col-4 cart-menu-img">
+                              <img src="../assets/image/linen-blazer.jpg" alt="">
+                            </div>
+                            <div class="col-8 cart-menu-content">
+                              <p>Linen White Blazer</p>
+                              <span>&#8377;30</span>
+                            </div>
+                          </div>
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="col-4 cart-menu-img">
+                              <img src="../assets/image/pink-crop-top.jpg" alt="">
+                            </div>
+                            <div class="col-8 cart-menu-content">
+                              <p>Pink Crop Top</p>
+                              <span>&#8377;30</span>
+                            </div>
+                          </div>
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="col-4 cart-menu-img">
+                              <img src="../assets/image/white-suit.webp" alt="">
+                            </div>
+                            <div class="col-8 cart-menu-content">
+                              <p>Solid Biege Blazer</p>
+                              <span>&#8377;30</span>
+                            </div>
+                          </div>
+                        </a></li>
+                        <hr>
+                        <li><a class="total-cart" href="#" style="text-decoration: none; color: black;">
+                          <div class="d-flex flex-row justify-content-between cart-menu-content1">
+                              <p>Total</p>
+                              <span>&#8377;30</span>
+                          </div>
+                        </a></li>
+                        <li><a class=" d-flex justify-content-center" href="#" style="text-decoration: none;">
+                          <button type="button" class="btn btn-danger rounded-5 cart-menu-btn">Go To Cart</button>
+                        </a></li>
+                        </ul>
+                    </span>
+                </span>
+            </div>   
+        </div>
+    </div>
+    <div class="bottom-sub-header">
+        <div class="container d-flex">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav atoz-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Shop
+                        </a>
+                        <div class="dropdown-menu shop-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="../pages/men-fashion.html">Men's Fashion</a>
+                          <a class="dropdown-item" href="../pages/women-fashion.html">Women's Fashion</a>
+                          <a class="dropdown-item" href="../pages/kid-fashion.html">Kid's Fashion</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/blog.html">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+    <!-- HEADER ENDING -->
+    <!-- CONTACT FIRST BANNER -->
+    <div class="first-banner-heading">
+        <h1>CONTACT US</h1>
+        <h2>WE'D LOVE TO HEAR FROM YOU</h2>
+    </div>
+    <!-- CONTACT FIRST BANNER -->
+    <!-- CONTACT US PARA -->
+    <div class="container contact-para">
+        <p>Dear Valued Customers, due to the high volume of orders during the Black Friday sales, you may experience a brief delay in processing & shipping. Please be assured, our team is working diligently to get your orders to you as quickly as possible.</p>
+    </div>
+    <!-- CONTACT US PARA -->
+    <!-- QUICK LINKS -->
+    <div class="quick-link">
+        <div class="container d-flex" style="gap: 30px;">
+            <div class="offset-1 col-5">
+                <div class="card order-card-link">
+                    <div class="card-body order-card-link-body">
+                        <i class="bi bi-globe-central-south-asia"></i>
+                        <p>I WANT TO KNOW WHERE MY ORDER IS</p>
+                        <p>Enter the order number found in the order confirmation email</p>
+                        <label for="" class="label-order">ORDER NO</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="e.g. 3121268147">
+                    </div>
+                    <div class="card-footer order-card-link-footer">
+                        <button type="button" class="btn btn-danger">Track My Order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="card order-card-link">
+                    <div class="card-body order-card-link-body">
+                        <i class="bi bi-arrow-return-left"></i> 
+                        <p>I WANT TO RETURN SOMETHING</p>
+                        <p>Register returns easily online. All you need is the order number found in the order confirmation email, and the email address used when placing your order. <br><br>The return request must be raised with us within 15 days from the date you receive your parcel</p>
+                    </div>
+                    <div class="card-footer order-card-link-footer">
+                        <button type="button" class="btn btn-danger">Register a Return</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- QUICK LINKS -->
+    <!-- VIRTUAL ASSISTANCE -->
+    <div class="assistance">
+        <div class="container" style="text-align: center; padding: 60px;">
+            <p>You can chat with our Virtual assistant 24/7 for answers to frequently asked questions. You’ll be put through to a live agent if you need more help, during below opening hours. <br><br><b>Call Us</b><br> 1800-889-8000 <br>Free of charge <br><br><b>Opening Hours</b><br><br><b>Phone</b><br>Monday – Sunday: 8.00 – 22.00 <br><br><b>Chat</b><br>Monday – Sunday: 8.00 – 22.00 <br><br><b>Email</b><br>customerservice.in@atoz.com <br><br><br>When you contact Customer Service your personal data will be processed in accordance with our Privacy Notice. <br><br><br><b>All product returns come at an environmental cost and each returned package leaves a significant trail of emissions. AtoZ Shopping Store encourages you to be a contributor towards climate positive fashion. Kindly refer to our product details and size guide to avoid inconvenience of returns</b></p>
+        </div>
+    </div>
+    <!-- VIRTUAL ASSISTANCE -->
+    <div class="map-container">
+      <!-- Paste the Google Maps iframe code here -->
+      <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28967.044116570867!2d77.09150922701878!3d28.704059788350876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02b6a9d08f6d%3A0xa9d51629d70941f2!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+          allowfullscreen=""
+          loading="lazy">
+      </iframe>
+  </div>
+    <!-- CONTACT INFO STARTING -->
+    <div class="contact-info" style="margin-top: 50px;">
+      <div class="container d-flex">
+        <div class="col-4 p-3">
+          <p class="th-head">NEWSLETTER</p>
+          <div class="input-group">
+            <input type="search" class="form-control input-form rounded-0" placeholder="ENTER EMAIL ADDRESS" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-danger  rounded-0" data-mdb-ripple-init>SUBMIT</button>
+          </div>
+          <p class="th-head pay-head">PAYMENT RECIEVED IN</p>
+          <img src="../assets/icon/payment.png" alt="" class="payment-icons">
+          <div>
+
+          </div>
+        </div>
+        <div class="col-2 p-3">
+          <p class="th-head">CATEGORIES</p>
+          <ul type="none" class="th-list">
+            <li>Fashion Sneakers</li>
+            <li>Jackets</li>
+            <li>Outdoors Shop</li>
+            <li>Pants</li>
+            <li>Shirts & Tops</li>
+            <li>Swim Shop</li>
+            <li>Swimwear</li>
+          </ul>
+        </div>
+        <div class="col-2 p-3">
+          <p class="th-head">MY ACCOUNT</p>
+          <ul type="none" class="th-list">
+            <li>Orders</li>
+            <li>Compare</li>
+            <li>Wishlist</li>
+            <li>Log In</li>
+            <li>Register</li>
+          </ul>
+        </div>
+        <div class="col-4 p-3">
+          <p class="th-head">CONTACT INFO</p>
+          <ul type="none" class="th-list1">
+            <li><i class="bi bi-geo-alt"></i>&nbsp;14 Bigha,Muni Ki Reti, Dehradun, Rishikesh Uttarakhand-249201</li>
+            <li><i class="bi bi-telephone"></i>&nbsp;+91 81717 94097</li>
+            <li><i class="bi bi-envelope"></i>&nbsp;atozshop@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT INFO ENDING -->
+    <hr>    
+    <!-- POPULAR SEARCH STARTING  -->
+    <div class="popular-search-products">
+      <div class="container ">
+        <h6 class="ps-head">POPULAR SEARCHES FOR PRODUCT</h6>
+        <div class="link-ref-search">
+          <a href="#" class="scroll-up">Jackets</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up">&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up"></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up"></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up"></a>  
+        </div>
+      </div>
+    </div>
+    <!-- POPULAR SEARCH ENDING -->
+    <!-- FOOTER SECTION STARTING -->
+    <div class="footer-section">
+      <div class="container d-flex">
+        <div class="col-4 icons-footer">
+          <i class="bi bi-facebook"></i>&nbsp;&nbsp;<i class="bi bi-whatsapp"></i>&nbsp;&nbsp;<i class="bi bi-messenger"></i>&nbsp;&nbsp;<i class="bi bi-twitter-x"></i>&nbsp;&nbsp;<i class="bi bi-pinterest"></i>
+        </div>
+        <div class="col-4 middle-footer-line">
+          <p>Copyright &#169; 2018. All Right Reserved.</p>
+        </div>
+        <div class="col-4 end-footer-line">
+          <p>Privacy Policy</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>Terms & Conditions</span>
+        </div>
+      </div>
+    </div> 
+</body> 
+<!-- REGISTER MODAL STARTING -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog login-dialog">
+      <div class="modal-content login-modal-content">
+          <div class="modal-body">
+            <div class="login-header d-flex justify-content-between">
+              <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+              <i class="bi bi-x-square-fill" data-bs-dismiss="modal" aria-label="Close"></i> 
+            </div>
+            <input type="email" class="form-control input-boxx" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
+            <input type="password" class="form-control input-boxx" id="exampleInputPassword1" placeholder="Enter Your Password">
+            <div class="d-flex justify-content-between mb-3">
+              <div class="remember-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">&nbsp;  
+                <label class="form-check-label" for="defaultCheck1">
+                    Remember Me
+                </label>
+              </div>
+              <div class="password-href">
+                <a href="">Forgot Password ?</a>
+              </div>
+            </div>
+            <a href=""><button type="button" class="btn btn-danger form-control login-btn">Login</button></a>
+            <div class="d-flex flex-column align-items-center two-href">
+              <a href="">Don't Have Account?</a>
+              <a href="">Click Here To Sign up</a>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- REGISTER MODAL ENDING -->
+</html>

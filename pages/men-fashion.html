@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/variable.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/shop-fashion.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</head>
+<body>
+    <!-- HEADER STARTING -->
+    <div class="top-sub-header" id="tsh">
+        <div class="container d-flex">
+            <div class="col-6 left-side-ts-head">
+                <img class="shop-bag" src="../assets/icon/shop_bag.png" alt="">
+                <span>Welcome To AtoZ Shopping Store</span>
+            </div>
+            <div class="col-6 right-side-ts-head">
+                <span><i class="bi bi-telephone-fill"></i>&nbsp;+91 81717 94097&nbsp;&nbsp;|&nbsp;&nbsp;<i class="bi bi-envelope"></i>&nbsp;atozshop@gmail.com</span>
+            </div>
+        </div>
+    </div>
+    <div class="main-header">
+        <div class="container d-flex align-items-center">
+            <div class="col-3 left-side-mhead">
+                <img class="store-logo" src="../assets/icon/store_logo.png" alt="">
+            </div>
+            <div class="col-6 middle-mhead">
+                <div class="input-group">
+                    <input type="search" class="form-control input-form rounded-0" placeholder="Search Product ..." aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="btn btn-outline-danger  rounded-0" data-mdb-ripple-init>Search</button>
+                </div>
+            </div>
+            <div class="col-3 right-side-mhead">
+                <span><i class="bi bi-arrow-right-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="Login/Signup" id="modalButton"></i>&nbsp;|&nbsp;<i class="bi bi-person-fill" data-toggle="tooltip" data-placement="top" title="My Account"></i>&nbsp;|&nbsp;<i class="bi bi-heart-fill" data-toggle="tooltip" data-placement="top" title="Wishlist"></i>&nbsp;|&nbsp;<span class="dropdown">
+                        <button class="btn cart-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-toggle="tooltip" data-placement="top" title="My Cart">
+                            <i class="bi bi-cart3" ></i>
+                        </button>
+                        <ul class="dropdown-menu cart-menu">
+                        <li><a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="col-4 cart-menu-img">
+                              <img src="../assets/image/linen-blazer.jpg" alt="">
+                            </div>
+                            <div class="col-8 cart-menu-content">
+                              <p>Linen White Blazer</p>
+                              <span>&#8377;30</span>
+                            </div>
+                          </div>
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="col-4 cart-menu-img">
+                              <img src="../assets/image/pink-crop-top.jpg" alt="">
+                            </div>
+                            <div class="col-8 cart-menu-content">
+                              <p>Pink Crop Top</p>
+                              <span>&#8377;30</span>
+                            </div>
+                          </div>
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                          <div class="d-flex">
+                            <div class="col-4 cart-menu-img">
+                              <img src="../assets/image/white-suit.webp" alt="">
+                            </div>
+                            <div class="col-8 cart-menu-content">
+                              <p>Solid Biege Blazer</p>
+                              <span>&#8377;30</span>
+                            </div>
+                          </div>
+                        </a></li>
+                        <hr>
+                        <li><a class="total-cart" href="#" style="text-decoration: none; color: black;">
+                          <div class="d-flex flex-row justify-content-between cart-menu-content1">
+                              <p>Total</p>
+                              <span>&#8377;30</span>
+                          </div>
+                        </a></li>
+                        <li><a class=" d-flex justify-content-center" href="#" style="text-decoration: none;">
+                          <button type="button" class="btn btn-danger rounded-5 cart-menu-btn">Go To Cart</button>
+                        </a></li>
+                        </ul>
+                    </span>
+                </span>
+            </div>   
+        </div>
+    </div>
+    <div class="bottom-sub-header">
+        <div class="container d-flex">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav atoz-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Shop
+                        </a>
+                        <div class="dropdown-menu shop-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../pages/men-fashion.html">Men's Fashion</a>
+                            <a class="dropdown-item" href="../pages/women-fashion.html">Women's Fashion</a>
+                            <a class="dropdown-item" href="../pages/kid-fashion.html">Kid's Fashion</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/blog.html">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+    <!-- HEADER ENDING -->
+    <!-- SHOPPING BANNER -->
+    <div class="men-shop-banner">
+        <h1>MEN FASHION</h1>
+    </div>
+    <!-- SHOPPING BANNER -->
+    <!-- PRODUCT LISTING -->
+    <div class="product-listing mt-5 pt-2">
+        <div class="container d-flex">
+            <div class="col-3 left-sidebar">
+                <div class="sidebar-divs">
+                    <p>CATEGORIES</p>
+                    <hr>
+                    <table class="table">
+                        <tr>
+                            <td>Winter Wear (120)</td>
+                        </tr>
+                        <tr>
+                            <td>Casual Bottoms (100)</td>
+                        </tr>
+                        <tr>
+                            <td>Formal Wear (80)</td>
+                        </tr>
+                        <tr>
+                            <td>T-Shirts (480)</td>
+                        </tr>
+                        <tr>
+                            <td>Cargos (340)</td>
+                        </tr>
+                        <tr>
+                            <td>Sneakers (200)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="pt-3 sidebar-divs">
+                    <p>FILTER</p>
+                    <hr>
+                    <input type="range" class="form-range" min="0" max="10"  name="" id="" >
+                    <p>PRICE &#8377;0&nbsp;&#8208;&nbsp;&#8377;10000</p>
+                </div>
+                <div class="pt-3 sidebar-divs">
+                    <p>COLOR</p>
+                    <hr>
+                    <table class="table">
+                        <tr>
+                            <td>Black (10)</td>
+                        </tr>
+                        <tr>
+                            <td>Blue (40)</td>
+                        </tr>
+                        <tr>
+                            <td>Biege (55)</td>
+                        </tr>
+                        <tr>
+                            <td>White (82)</td>
+                        </tr>
+                        <tr>
+                            <td>Red (20)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-9 pro-list">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="btn-group sort-btn">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Default Sorting
+                        </button>
+                        <div class="dropdown-menu sort-menu">
+                          <a class="dropdown-item" href="#">Default Sorting</a>
+                        </div>
+                    </div>
+                    <p class="results">Showing 1&nbsp;&#8208;&nbsp;12&nbsp;of&nbsp;15&nbsp;Results</p>
+                </div>
+                <div class="d-flex flex-wrap grid-of-products mb-5">
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/linen-blazer.jpg" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Linen White Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/white-suit.webp" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Solid Biege Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/linen-blazer.jpg" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Linen White Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/white-suit.webp" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Solid Biege Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/linen-blazer.jpg" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Linen White Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/white-suit.webp" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Solid Biege Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/linen-blazer.jpg" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Linen White Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/white-suit.webp" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Solid Biege Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/linen-blazer.jpg" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Linen White Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/white-suit.webp" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Solid Biege Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/linen-blazer.jpg" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Linen White Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4 card product-item-card">
+                        <div class="card-body product-image">
+                            <img src="../assets/image/white-suit.webp" alt="">
+                            <button class="btn btn-danger add-to-cart">Add to Cart</button>
+                            <div class="buttons-flex d-flex">
+                                <div class="heart"><i class="bi bi-heart-fill"></i></div>
+                                <div class="eye"><i class="bi bi-eye-fill"></i></div>
+                                <div class="share"><i class="bi bi-share-fill"></i></div>
+                            </div>
+                        </div>
+                        <div class="card-footer price-name-footer">
+                            <h6 class="" style="font-weight: bold;">Solid Biege Blazer</h6>
+                            <p class="product-price">
+                                <span class="canceled-price">&#8377;100</span>&nbsp;
+                                <span class="last-price">&#8377;30</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PRODUCT LISTING -->
+    <hr> 
+    <!-- CONTACT INFO STARTING -->
+    <div class="contact-info">
+      <div class="container d-flex">
+        <div class="col-4 p-3">
+          <p class="th-head">NEWSLETTER</p>
+          <div class="input-group">
+            <input type="search" class="form-control input-form rounded-0" placeholder="ENTER EMAIL ADDRESS" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-danger  rounded-0" data-mdb-ripple-init>SUBMIT</button>
+          </div>
+          <p class="th-head pay-head">PAYMENT RECIEVED IN</p>
+          <img src="../assets/icon/payment.png" alt="" class="payment-icons">
+          <div>
+
+          </div>
+        </div>
+        <div class="col-2 p-3">
+          <p class="th-head">CATEGORIES</p>
+          <ul type="none" class="th-list">
+            <li>Fashion Sneakers</li>
+            <li>Jackets</li>
+            <li>Outdoors Shop</li>
+            <li>Pants</li>
+            <li>Shirts & Tops</li>
+            <li>Swim Shop</li>
+            <li>Swimwear</li>
+          </ul>
+        </div>
+        <div class="col-2 p-3">
+          <p class="th-head">MY ACCOUNT</p>
+          <ul type="none" class="th-list">
+            <li>Orders</li>
+            <li>Compare</li>
+            <li>Wishlist</li>
+            <li>Log In</li>
+            <li>Register</li>
+          </ul>
+        </div>
+        <div class="col-4 p-3">
+          <p class="th-head">CONTACT INFO</p>
+          <ul type="none" class="th-list1">
+            <li><i class="bi bi-geo-alt"></i>&nbsp;14 Bigha,Muni Ki Reti, Dehradun, Rishikesh Uttarakhand-249201</li>
+            <li><i class="bi bi-telephone"></i>&nbsp;+91 81717 94097</li>
+            <li><i class="bi bi-envelope"></i>&nbsp;atozshop@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT INFO ENDING -->
+    <hr>    
+    <!-- POPULAR SEARCH STARTING  -->
+    <div class="popular-search-products">
+      <div class="container ">
+        <h6 class="ps-head">POPULAR SEARCHES FOR PRODUCT</h6>
+        <div class="link-ref-search">
+          <a href="#" class="scroll-up">Jackets</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up">&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up"></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up"></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Coats</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Trousers</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Shorts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Suits</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dresses</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Cardigan</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Dress Pants</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Pencil Skirts</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Little Black Dress</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">White T-shirt</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" class="scroll-up">Underwear</a><a href="" class="scroll-up"></a>  
+        </div>
+      </div>
+    </div>
+    <!-- POPULAR SEARCH ENDING -->
+    <!-- FOOTER SECTION STARTING -->
+    <div class="footer-section">
+      <div class="container d-flex">
+        <div class="col-4 icons-footer">
+          <i class="bi bi-facebook"></i>&nbsp;&nbsp;<i class="bi bi-whatsapp"></i>&nbsp;&nbsp;<i class="bi bi-messenger"></i>&nbsp;&nbsp;<i class="bi bi-twitter-x"></i>&nbsp;&nbsp;<i class="bi bi-pinterest"></i>
+        </div>
+        <div class="col-4 middle-footer-line">
+          <p>Copyright &#169; 2018. All Right Reserved.</p>
+        </div>
+        <div class="col-4 end-footer-line">
+          <p>Privacy Policy</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>Terms & Conditions</span>
+        </div>
+      </div>
+    </div> 
+</body> 
+<!-- REGISTER MODAL STARTING -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog login-dialog">
+      <div class="modal-content login-modal-content">
+          <div class="modal-body">
+            <div class="login-header d-flex justify-content-between">
+              <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+              <i class="bi bi-x-square-fill" data-bs-dismiss="modal" aria-label="Close"></i> 
+            </div>
+            <input type="email" class="form-control input-boxx" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
+            <input type="password" class="form-control input-boxx" id="exampleInputPassword1" placeholder="Enter Your Password">
+            <div class="d-flex justify-content-between mb-3">
+              <div class="remember-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">&nbsp;  
+                <label class="form-check-label" for="defaultCheck1">
+                    Remember Me
+                </label>
+              </div>
+              <div class="password-href">
+                <a href="">Forgot Password ?</a>
+              </div>
+            </div>
+            <a href=""><button type="button" class="btn btn-danger form-control login-btn">Login</button></a>
+            <div class="d-flex flex-column align-items-center two-href">
+              <a href="">Don't Have Account?</a>
+              <a href="">Click Here To Sign up</a>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- REGISTER MODAL ENDING -->
+</html>

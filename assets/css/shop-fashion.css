@@ -1,0 +1,129 @@
+.men-shop-banner {
+    background-image: url(../image/shopping-fashion.png);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.women-shop-banner {
+    background-image: url(../image/women-shop-fashion.png);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.kid-shop-banner {
+    background-image: url(../image/kid-shop-fashion.png);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.sidebar-divs {
+    width: 85%;
+}
+.sidebar-divs p:nth-of-type(1){
+    font-size: 18px;
+    font-weight: bold;
+}
+.sidebar-divs p:nth-of-type(2) {
+    font-weight: bold;
+}
+.sidebar-divs .table tr td {
+    color: gray;
+    border-bottom: 1px dashed gainsboro;
+}
+.sidebar-divs .table tr td:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.results {
+    color: gray;
+    position: relative;
+    top: 10px;
+}
+.sort-btn button{
+    padding:8px 15px !important;
+}
+.sort-menu {
+    color: gainsboro !important;
+    padding: 20px;
+}
+.product-item-card{
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+.price-name-footer {
+    text-align: center;
+    border: none;
+    background-color: white;
+}
+.product-image img {
+    width: 250px;
+    height: 300px;
+    padding:0px 10px;
+    display: block;
+}
+/* Add to Cart button */
+.add-to-cart {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+}
+.heart,.eye,.share {
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px;
+    margin: 5px;
+}
+.heart:hover{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+}
+.eye:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+}
+.share:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+}
+.buttons-flex {
+    position: absolute;
+    top: 60%;
+    left: 28%;
+    color: white;
+    opacity: 0;
+    visibility: hidden; 
+}
+.product-item-card:hover .buttons-flex {
+    opacity: 1;
+    visibility: visible;
+}
+/* Show Add to Cart button on hover */
+.product-item-card:hover .add-to-cart {
+    opacity: 1;
+    visibility: visible;
+}
+.product-item-card:hover .product-image img {
+    opacity: 0.5;
+}
